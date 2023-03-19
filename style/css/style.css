@@ -1,0 +1,97 @@
+:root {
+    --bg-color: #130f0d;
+    --white: #FFF;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--light-grey);
+    color: var(--bg-color);
+}
+
+form {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 25px auto;
+    padding: 25px 64px;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 15px;
+    color: var(--deep-grey);
+}
+
+div.input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input,
+button {
+    /* reset appeareance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+    padding: 5px 0;
+    border:none;
+    border-bottom: 1px solid var(--deep-grey);
+    margin-top: 8px;
+    background-color: transparent;
+    outline: none;
+
+    /* text */
+    color: var(--bg-color);
+    font-size: 1em;
+
+}
+
+button {
+    border-radius: 4px;
+    margin-top: -10px;
+    background-color: var(--deep-grey);
+}
+
+input ~ label {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    color: var(--deep-grey);
+}
+
+input ~ label,
+input ~ label {
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+}

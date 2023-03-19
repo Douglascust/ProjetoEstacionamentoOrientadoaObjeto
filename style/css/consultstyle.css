@@ -1,0 +1,54 @@
+:root {
+    --bg-color: #130f0d;
+    --white: #FFF;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-grey);
+    color: var(--bg-color);
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    padding: 8px 10px ;
+    border: solid 1px;
+}
+
+table{
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: var(--whitesmoke);
+}
+
+button,input{
+    border: none;
+    margin: 5px auto;
+    display: block;
+    background:var(--bg-color);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+input {
+    padding: 5px;
+}
+
+form{
+    margin-top: 12%;
+    width: 100%;
+}
+
+
+
